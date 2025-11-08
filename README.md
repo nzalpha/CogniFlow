@@ -1,12 +1,4 @@
 # 🤖 Telegram MCP SSE Agent  
-**Session 8 – Telegram-Triggered Multi-MCP Agent**
-
-<div align="center">
-  <img src="https://img.shields.io/badge/Python-3.9+-blue.svg" alt="Python 3.9+">
-  <img src="https://img.shields.io/badge/MCP-SSE_Transport-green.svg" alt="MCP SSE Transport">
-  <img src="https://img.shields.io/badge/Telegram-Bot-blue.svg" alt="Telegram Bot">
-  <img src="https://img.shields.io/badge/Status-Active-success.svg" alt="Status: Active">
-</div>
 
 ---
 
@@ -21,15 +13,6 @@ This workspace orchestrates a reasoning agent that **wakes up when a Telegram bo
 
 ## 🧩 Architecture Overview
 
-Telegram Bot ──> mcp_server_telegram_sse.py (SSE transport with MCP tools)
-                           │
-                           ▼
-                     agent.py (perception → plan → act loop)
-                           │
-        ┌──────────────────┴─────────────────┐
-        ▼                                    ▼
-  stdio MCP servers                   HTTP/SSE MCP servers
-  (mcp_server_1/2/3.py)          (gmail, gsheet, telegram)
 
 
 1) **Telegram MCP SSE Server** (`mcp_server_telegram_sse.py`)  
@@ -150,3 +133,4 @@ sequenceDiagram
     A->>S: Final answer
     S->>T: sendMessage
     T->>U: Response delivered
+
