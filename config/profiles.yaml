@@ -34,6 +34,22 @@ mcp_servers:
   - id: websearch
     script: mcp_server_3.py
     cwd: /Users/nawaz/Desktop/Desktop-Sept2025/Nawaz/AI-Learnings/sai/session8
+  # - name: gmail_mcp
+  #   type: gmail
+  #   host: http://127.0.0.1:8082
+  #   description: Handles sending emails via Gmail API
+  #   tools:
+  #     - name: send_email
+  #       endpoint: /send_email
+  # - name: gsheet_mcp
+  #   type: google_sheets
+  #   host: http://127.0.0.1:8083
+  #   description: Handles creating and writing to Google Sheets
+  #   tools:
+  #     - name: create_sheet
+  #       endpoint: /create_sheet
+  #     - name: write_data
+  #       endpoint: /write_data
 
 
 
